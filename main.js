@@ -6,7 +6,7 @@ var session = require('express-session');
 var middleware = require('./middleware');
 // dependencies done
 var publicRoutes = require('./routes/public');
-var privateRoutes = require('./routes/privare');
+var privateRoutes = require('./routes/private');
 var apioutes = require('./routes/api');
 
 // routes // 
