@@ -20,8 +20,7 @@ var apioutes = require('./routes/api');
 var PORT = 3000;
 
 //to handle middleware // 
-app.use("/js", express.static("cope/js"));
-app.use("/css", express.static("cope/css"));
+
 
 app.use(middleware.myMiddleWare);
 app.use(session({
@@ -43,7 +42,6 @@ app.get('/', function(req,res){
 app.get('/', function(req,res){
   res.sendFile(process.cwd() + "/routes/public/contact.html");
 });
-
 
 app.Listen(PORT, function(){
   console.log("listening on port %s" + PORT);
