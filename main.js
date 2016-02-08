@@ -33,7 +33,7 @@ app.use(session({
   resave : false
 }));
 
-//to handle middleware // 
+//to handle middleware end // 
 
 app.get('/', function(req,res){
   res.sendFile(process.cwd() + "/routes/public/aboutme.html");
