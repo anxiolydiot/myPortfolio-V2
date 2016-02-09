@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use("/js", express.static("public/js"));
 app.use("/css", express.static("public/css"));
-app.use("/css", express.static("public/css/rpsJS"));
+app.use("/images", express.static("public/images"));
 
 
 
